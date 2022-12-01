@@ -9,6 +9,6 @@ RSpec.describe 'User login process', type: :feature do
     fill_in('username', with: 'Chrys')
     fill_in('password', with: 'pass123')
     click_button 'login'
-    expect(page).to have_content('Username ')
+    expect(page).to have_content('Login successful')
   end
 end
